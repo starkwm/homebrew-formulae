@@ -22,6 +22,7 @@ class Skbd < Formula
     keep_alive true
     log_path var/"log/skbd.log"
     error_log_path var/"log/skbd.log"
+    environment_variables PATH: std_service_path_env
   end
 
   test do
