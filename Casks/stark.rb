@@ -6,8 +6,6 @@ cask 'stark' do
   name 'Stark'
   homepage 'https://github.com/starkwm/stark'
 
-  depends_on macos: :monterey
-
   app 'Stark.app'
 
   zap delete: [
