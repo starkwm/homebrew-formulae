@@ -1,19 +1,18 @@
 class Skbd < Formula
   desc "Stark Keybind Daemon"
   homepage "https://usestark.app"
-  url "https://github.com/starkwm/skbd.git", tag: "v0.0.12", revision: "7bbf6aba2f49d145a8ba3395e41b172f4684d690"
+  url "https://github.com/starkwm/skbd.git", tag: "v0.0.1", revision: "32262e2cb05e0b8745c24a9dbc16f1d5211a18ca"
   head "https://github.com/starkwm/skbd.git", branch: "main"
 
   bottle do
-    root_url "https://skbd-builds.s3.amazonaws.com"
-    sha256 cellar: :any_skip_relocation, ventura: "d6270995a55c748b14fe5a26d3e993c19d22daad9cd89647e83199209b44d94d"
+    sha256 cellar: :any_skip_relocation, ventura: "6d7410439fc3b1e219389dc58a96e193b8b3b3f63a3d4d3248014f96a6a58793"
   end
 
   depends_on xcode: :build
-  depends_on macos: :monterey
+  depends_on macos: :ventura
 
   def install
-    system "make", "package"
+    system "make", "release"
     bin.install "#{buildpath}/.build/release/skbd"
   end
 
