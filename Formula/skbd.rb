@@ -5,6 +5,7 @@ class Skbd < Formula
   head "https://github.com/starkwm/skbd.git", branch: "main"
 
   bottle do
+    root_url "https://skbd-builds.s3.amazonaws.com"
     sha256 cellar: :any_skip_relocation, ventura: "6d7410439fc3b1e219389dc58a96e193b8b3b3f63a3d4d3248014f96a6a58793"
   end
 
