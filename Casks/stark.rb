@@ -1,6 +1,6 @@
 cask 'stark' do
   version '2.2.0'
-  sha256 '6fe21876df30bf165df2274ba47fded4310cd6d39c4a6318192fd4f4fe82450f'
+  sha256 '59df1657669e458e192baa5697418155543e1258d9c006b8d95b124493439fcf'
 
   url 'https://s3.amazonaws.com/stark-builds/stark-2.2.0.zip'
   name 'Stark'
