@@ -6,6 +6,8 @@ class Skbd < Formula
 
   bottle do
     root_url "https://skbd-builds.s3.amazonaws.com"
+    rebuild 1
+    sha256 cellar: :any_skip_relocation, sonoma: "277a60e386d6b2af7718f94d79278c9ca28f9ab3b15d4b13ec25c346cef457a7"
   end
 
   depends_on xcode: :build
