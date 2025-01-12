@@ -13,7 +13,7 @@ cask "stark@beta" do
   app "Stark.app"
 
   zap delete: [
-    "~/Library/LaunchAgents/app.usestark.Stark.plist",
-    "~/Library/Preferences/app.usestark.Stark.plist",
+    "~/Library/LaunchAgents/dev.tombell.Stark.plist",
+    "~/Library/Preferences/dev.tombell.Stark.plist",
   ]
 end
