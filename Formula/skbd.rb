@@ -6,7 +6,8 @@ class Skbd < Formula
 
   bottle do
     root_url "https://starkwm-builds.s3.amazonaws.com"
-    sha256 cellar: :any_skip_relocation, sonoma: "728a2751909c6376a49eec308d55b8fc2f840cb8f34db2637e851b57ffb8d30c"
+    rebuild 1
+    sha256 cellar: :any_skip_relocation, sonoma: "aa465f52fb5cadc1011208c2c24abc611d54e5a5483b6ce32def09fba525e242"
   end
 
   depends_on xcode: :build
