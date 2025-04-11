@@ -8,7 +8,7 @@ cask "stark@tip" do
   homepage "https://github.com/starkwm/stark"
 
   conflicts_with cask: ["stark"]
-  depends_on macos: :sonoma
+  depends_on macos: ">= :sonoma"
 
   app "Stark.app"
 
