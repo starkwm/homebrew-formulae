@@ -1,13 +1,12 @@
 class Skbd < Formula
   desc "Stark Keybind Daemon for macOS, bind keys to shell commands"
   homepage "https://github.com/starkwm/skbd"
-  url "https://github.com/starkwm/skbd.git", tag: "v0.0.6", revision: "d19b3f748dbfa586196dae4347e04258e8d021a2"
+  url "https://github.com/starkwm/skbd.git", tag: "v0.0.7", revision: "39cfcd7d026977a4ed21b1a41dfb28db7e372eaf"
   head "https://github.com/starkwm/skbd.git", branch: "main"
 
   bottle do
     root_url "https://starkwm-builds.s3.amazonaws.com"
-    rebuild 3
-    sha256 cellar: :any_skip_relocation, arm64_sequoia: "a2d587b9aeb4996978d1b057212eb920aef3a8d1602c76c8f4e6487aefad9619"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "707ec2d9e67306bd99d3465630dbd8980b2bf3fcf40daf6cf1c5c9fb56d5195d"
   end
 
   depends_on xcode: :build
