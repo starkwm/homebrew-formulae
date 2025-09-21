@@ -10,7 +10,9 @@ class Skbd < Formula
   end
 
   depends_on xcode: :build
-  depends_on macos: :ventura
+
+  depends_on macos: :sequoia
+  depends_on arch: :arm64
 
   def install
     system "make", "release"
