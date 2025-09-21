@@ -8,7 +8,7 @@ cask "stark@tip" do
   homepage "https://github.com/starkwm/stark"
 
   conflicts_with cask: ["stark"]
-  depends_on macos: ">= :sequoia"
+  depends_on macos: ">= :sequoia", arch: :arm64
 
   app "Stark.app"
 
