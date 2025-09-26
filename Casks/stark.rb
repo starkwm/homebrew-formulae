@@ -7,6 +7,7 @@ cask "stark" do
   desc "Power your window management with JavaScript"
   homepage "https://github.com/starkwm/stark"
 
+  conflicts_with cask: ["stark@tip"]
   depends_on macos: ">= :sonoma"
 
   app "Stark.app"
