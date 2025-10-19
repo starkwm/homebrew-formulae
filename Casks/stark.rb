@@ -1,6 +1,6 @@
 cask "stark" do
   version "3.0.0"
-  sha256 "6ef606405c1210d47c6200582f27714a8df246ac1ad2c659eb2c0ef3ed5815fb"
+  sha256 "0b0f6cbdee16fb600260b5a7c2c40e1bba31b3e6446a82c818e6a6e13953fa8d"
 
   url "https://starkwm-builds.s3.amazonaws.com/stark-3.0.0.zip", verified: "stark-builds.s3.amazonaws.com/"
   name "Stark"
