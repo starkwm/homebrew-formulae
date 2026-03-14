@@ -23,8 +23,8 @@ class SkbdAT2 < Formula
   service do
     run opt_bin / 'skbd'
     keep_alive true
-    log_path var / 'log/skbd.next.log'
-    error_log_path var / 'log/skbd.next.log'
+    log_path var / 'log/skbd@2.log'
+    error_log_path var / 'log/skbd@2.log'
     environment_variables PATH: std_service_path_env
   end
 
