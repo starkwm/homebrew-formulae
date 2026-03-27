@@ -1,7 +1,7 @@
 class SkbdAT2 < Formula
   desc 'Stark Keybind Daemon for macOS, bind shortcuts to shell commands'
   homepage 'https://github.com/starkwm/skbd'
-  url 'https://github.com/starkwm/skbd.git', tag: 'v0.0.3', revision: '85030171cd70f7a1e4e1d71a87d3787b9785d5ef'
+  url 'https://github.com/starkwm/skbd.git', tag: 'v0.0.4', revision: '4a1c7468fbefabc00b9ac2e6a8ce9512825854fa'
   head 'https://github.com/starkwm/skbd.git', branch: 'main'
 
   bottle do
