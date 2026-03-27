@@ -10,7 +10,7 @@ class Skbd < Formula
     sha256 cellar: :any_skip_relocation, arm64_tahoe: 'f67742591f4f11e3f80a72d537bbcd73ae49a19ff0278e39014c718d58d3a893'
   end
 
-  deprecate! date: '2025-03-27', because: :discontinued
+  deprecate! date: '2025-10-01', because: :discontinued
 
   depends_on xcode: :build
 
