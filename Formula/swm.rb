@@ -4,9 +4,11 @@ class Swm < Formula
   url 'https://github.com/starkwm/swm.git', tag: 'v0.0.1', revision: '4673881f53ab3a2230cbff74bcd7abd447e7557e'
   head 'https://github.com/starkwm/swm.git', branch: 'main'
 
-  # bottle do
-  #   root_url 'https://starkwm-builds.s3.amazonaws.com'
-  # end
+  bottle do
+    root_url 'https://starkwm-builds.s3.amazonaws.com'
+    rebuild 1
+    sha256 cellar: :any_skip_relocation, arm64_tahoe: 'd55d396e6a314aba3100f3250f3cfa65bab29d561251d8521adfed9d7b642e52'
+  end
 
   depends_on xcode: :build
 
