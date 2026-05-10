@@ -1,7 +1,7 @@
 class Swm < Formula
   desc 'Stark Window Manager'
   homepage 'https://github.com/starkwm/swm'
-  url 'https://github.com/starkwm/swm.git', tag: 'v0.0.0', revision: '310400e4788bffd050571ef833d6ab2a2da16d4c'
+  url 'https://github.com/starkwm/swm.git', tag: 'v0.0.1', revision: '4673881f53ab3a2230cbff74bcd7abd447e7557e'
   head 'https://github.com/starkwm/swm.git', branch: 'main'
 
   # bottle do
@@ -27,6 +27,6 @@ class Swm < Formula
   end
 
   test do
-    assert_match 'swm v0.0.0', shell_output("#{bin}/skbd --version")
+    assert_match "swm #{version}", shell_output("#{bin}/skbd --version")
   end
 end
