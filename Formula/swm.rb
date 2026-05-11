@@ -17,19 +17,6 @@ class Swm < Formula
   def install
     system 'make', 'release'
     bin.install "#{buildpath}/.build/release/swm"
-
-    identity = ENV['SWM_SIGN_IDENTITY'] || '-' # fallback to ad-hoc
-    args = %W[
-      --force
-      --sign #{identity}
-      --identifier dev.tombell.swm
-      --timestamp
-    ]
-    args.delete('--timestamp') if identity == '-' # ad-hoc can't timestamp
-    args.delete('--options') && args.delete('runtime') if identity == '-'
-
-    system 'codesign', *args, bin / 'swm'
-    system 'codesign', '--verify', '--strict', '--verbose=2', bin / 'swm'
   end
 
   service do
