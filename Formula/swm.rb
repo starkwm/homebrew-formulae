@@ -1,7 +1,7 @@
 class Swm < Formula
   desc 'Stark Window Manager'
   homepage 'https://github.com/starkwm/swm'
-  url 'https://github.com/starkwm/swm.git', tag: 'v0.0.3', revision: '980e46a075d63a96ea3bebc11b128b3822c8d915'
+  url 'https://github.com/starkwm/swm.git', tag: 'v0.0.4', revision: '2762a82a07b4fc3138be7c822b1a8220572ccdd6'
   head 'https://github.com/starkwm/swm.git', branch: 'main'
 
   bottle do
