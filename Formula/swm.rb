@@ -6,8 +6,7 @@ class Swm < Formula
 
   bottle do
     root_url 'https://starkwm-builds.s3.amazonaws.com'
-    rebuild 3
-    sha256 cellar: :any_skip_relocation, arm64_tahoe: 'df91ef6cf835b92605bcf206fe82d9783bc90e4e5a5fcab5480eab81b6eb5867'
+    sha256 cellar: :any_skip_relocation, arm64_tahoe: '547d30b26683094a73ee80a2f0b2508492d06bb3e686965fc001ab56ed8e0303'
   end
 
   depends_on xcode: :build
