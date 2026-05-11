@@ -17,12 +17,20 @@ class Swm < Formula
 
   def install
     system 'make', 'release'
-    bin.install "#{buildpath}/.build/release/swm"
-    codesign bin / 'swm'
-  end
+    bin.install 'build/swm'
 
-  def codesign(*args)
-    system '/usr/bin/codesign', '--force', '--sign', '-', *args
+    identity = ENV['SWM_SIGN_IDENTITY'] || '-' # fallback to ad-hoc
+    args = %W[
+      --force
+      --sign #{identity}
+      --identifier dev.tombell.swm
+      --timestamp
+    ]
+    args.delete('--timestamp') if identity == '-' # ad-hoc can't timestamp
+    args.delete('--options') && args.delete('runtime') if identity == '-'
+
+    system 'codesign', *args, bin / 'swm'
+    system 'codesign', '--verify', '--strict', '--verbose=2', bin / 'swm'
   end
 
   service do
