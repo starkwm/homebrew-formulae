@@ -20,7 +20,7 @@ class Swm < Formula
   end
 
   service do
-    run opt_bin / 'swm'
+    run HOMEBREW_PREFIX / 'bin/swm'
     keep_alive true
     log_path var / 'log/swm.log'
     error_log_path var / 'log/swm.log'
