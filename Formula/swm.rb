@@ -17,7 +17,7 @@ class Swm < Formula
 
   def install
     system 'make', 'release'
-    bin.install 'build/swm'
+    bin.install "#{buildpath}/.build/release/swm"
 
     identity = ENV['SWM_SIGN_IDENTITY'] || '-' # fallback to ad-hoc
     args = %W[
