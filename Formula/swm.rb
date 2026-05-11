@@ -18,6 +18,11 @@ class Swm < Formula
   def install
     system 'make', 'release'
     bin.install "#{buildpath}/.build/release/swm"
+    codesign bin / 'swm'
+  end
+
+  def codesign(*args)
+    system '/usr/bin/codesign', '--force', '--sign', '-', *args
   end
 
   service do
