@@ -28,6 +28,6 @@ class Swm < Formula
   end
 
   test do
-    assert_match "swm #{version}", shell_output("#{bin}/skbd --version")
+    assert_match "swm #{version}", shell_output("#{bin}/swm --version")
   end
 end
