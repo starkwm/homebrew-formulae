@@ -7,8 +7,8 @@ class SkbdAT2 < Formula
 
   bottle do
     root_url 'https://starkwm-builds.s3.amazonaws.com'
-    rebuild 1
-    sha256 cellar: :any_skip_relocation, arm64_tahoe: 'c4d1a139fd1ff6470c6e97caa181d5b16560d71db0c9c95113dab022cc6bf898'
+    rebuild 2
+    sha256 cellar: :any_skip_relocation, arm64_tahoe: '14a512fb0b2d399e143c9154264ce784fe5df182ef57635352185ac7f4c448b0'
   end
 
   depends_on xcode: :build
