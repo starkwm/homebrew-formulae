@@ -10,8 +10,8 @@ class Swm < Formula
     rebuild 1
     sha256 cellar: :any_skip_relocation, arm64_tahoe: '3a9ab63c2fd9fed0a890886d4272ad777ca0edc810651dbf9e6aaf764fe23134'
   end
-  depends_on xcode: :build
 
+  depends_on xcode: :build
   depends_on arch: :arm64
   depends_on macos: :tahoe
 

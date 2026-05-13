@@ -12,7 +12,6 @@ class SkbdAT2 < Formula
   end
 
   depends_on xcode: :build
-
   depends_on arch: :arm64
   depends_on macos: :sequoia
 
