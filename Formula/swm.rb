@@ -2,7 +2,8 @@ class Swm < Formula
   desc 'Stark Window Manager'
   homepage 'https://github.com/starkwm/swm'
 
-  url 'https://github.com/starkwm/swm/archive/refs/tags/v0.0.7.tar.gz'
+  url 'https://github.com/starkwm/swm/archive/refs/tags/v0.0.8.tar.gz'
+  sha256 '7650871bc89229ee63de878c2f7b822c7a336d38dad09d8a7fcb63804e78fd46'
   head 'https://github.com/starkwm/swm.git', branch: 'main'
 
   bottle do
