@@ -2,15 +2,9 @@ class Swm < Formula
   desc 'Stark Window Manager'
   homepage 'https://github.com/starkwm/swm'
 
-  url 'https://github.com/starkwm/swm/archive/refs/tags/v0.0.9.tar.gz'
-  sha256 '575a5fd0a37d72e468b6f0fd2bccc02fbc7313379b73611e65d12a483a15e814'
+  url 'https://github.com/starkwm/swm/archive/refs/tags/v0.0.10.tar.gz'
+  sha256 '1e2b9753ad6083fe07766d172db65e1be73dd2c7f21e548bc2aa3ab87a5dc69d'
   head 'https://github.com/starkwm/swm.git', branch: 'main'
-
-  bottle do
-    root_url 'https://starkwm-builds.s3.amazonaws.com'
-    rebuild 3
-    sha256 cellar: :any_skip_relocation, arm64_tahoe: '894394df9f9bc852ac4d4f62657049c48b6503693817df8e7ca6ebd0621d056e'
-  end
 
   depends_on xcode: :build
   depends_on arch: :arm64
