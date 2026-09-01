@@ -6,6 +6,12 @@ class Swm < Formula
   sha256 '1e2b9753ad6083fe07766d172db65e1be73dd2c7f21e548bc2aa3ab87a5dc69d'
   head 'https://github.com/starkwm/swm.git', branch: 'main'
 
+  bottle do
+    root_url 'https://starkwm-builds.s3.amazonaws.com'
+    rebuild 1
+    sha256 cellar: :any_skip_relocation, arm64_tahoe: 'c49b7c6caf121dfe23ce7d04fdd24da8511a71d75a78e6ddc864f5d52c994d56'
+  end
+
   depends_on xcode: :build
   depends_on arch: :arm64
   depends_on macos: :tahoe
