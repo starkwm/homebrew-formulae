@@ -1,15 +1,15 @@
 class Swm < Formula
-  desc 'Stark Window Manager'
-  homepage 'https://github.com/starkwm/swm'
+  desc "Stark Window Manager"
+  homepage "https://github.com/starkwm/swm"
 
-  url 'https://github.com/starkwm/swm/archive/refs/tags/v0.0.12.tar.gz'
-  sha256 '372aeb77e59c9e3b8782545d4fc3b88712ac0a78c5589fffe5996cad797c3b08'
-  head 'https://github.com/starkwm/swm.git', branch: 'main'
+  url "https://github.com/starkwm/swm/archive/refs/tags/v0.0.12.tar.gz"
+  sha256 "372aeb77e59c9e3b8782545d4fc3b88712ac0a78c5589fffe5996cad797c3b08"
+  head "https://github.com/starkwm/swm.git", branch: "main"
 
   bottle do
-    root_url 'https://starkwm-builds.s3.amazonaws.com'
+    root_url "https://starkwm-builds.s3.amazonaws.com"
     rebuild 3
-    sha256 cellar: :any_skip_relocation, arm64_tahoe: '39da50f6a59e16acd6762905aef10d826ad555a98af5865d2d45668994d755f5'
+    sha256 cellar: :any_skip_relocation, arm64_tahoe: "39da50f6a59e16acd6762905aef10d826ad555a98af5865d2d45668994d755f5"
   end
 
   depends_on xcode: :build
@@ -17,15 +17,16 @@ class Swm < Formula
   depends_on macos: :tahoe
 
   def install
-    system 'make', 'release'
+    system "make", "release"
     bin.install "#{buildpath}/.build/release/swm"
+    generate_completions_from_executable bin / "swm", "--generate-completion-script"
   end
 
   service do
-    run opt_bin / 'swm'
+    run opt_bin / "swm"
     keep_alive true
-    log_path var / 'log/swm.log'
-    error_log_path var / 'log/swm.log'
+    log_path var / "log/swm.log"
+    error_log_path var / "log/swm.log"
     environment_variables PATH: std_service_path_env
   end
 
