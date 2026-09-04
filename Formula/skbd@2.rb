@@ -1,14 +1,15 @@
 class SkbdAT2 < Formula
-  desc 'Stark Keybind Daemon for macOS, bind shortcuts to shell commands'
-  homepage 'https://github.com/starkwm/skbd'
+  desc "Stark Keybind Daemon for macOS, bind shortcuts to shell commands"
+  homepage "https://github.com/starkwm/skbd"
 
-  url 'https://github.com/starkwm/skbd/archive/refs/tags/v0.0.6.tar.gz'
-  head 'https://github.com/starkwm/skbd.git', branch: 'main'
+  url "https://github.com/starkwm/skbd/archive/refs/tags/v0.0.7.tar.gz"
+  sha256 "7ed9985fc861bf3073f3a8169998282ff5613155b696713a82179e3d3360ad8b"
+  head "https://github.com/starkwm/skbd.git", branch: "main"
 
   bottle do
-    root_url 'https://starkwm-builds.s3.amazonaws.com'
+    root_url "https://starkwm-builds.s3.amazonaws.com"
     rebuild 2
-    sha256 cellar: :any_skip_relocation, arm64_tahoe: '14a512fb0b2d399e143c9154264ce784fe5df182ef57635352185ac7f4c448b0'
+    sha256 cellar: :any_skip_relocation, arm64_tahoe: "14a512fb0b2d399e143c9154264ce784fe5df182ef57635352185ac7f4c448b0"
   end
 
   depends_on xcode: :build
@@ -16,15 +17,15 @@ class SkbdAT2 < Formula
   depends_on macos: :sequoia
 
   def install
-    system 'make', 'release'
+    system "make", "release"
     bin.install "#{buildpath}/.build/release/skbd"
   end
 
   service do
-    run opt_bin / 'skbd'
+    run opt_bin / "skbd"
     keep_alive true
-    log_path var / 'log/skbd@2.log'
-    error_log_path var / 'log/skbd@2.log'
+    log_path var / "log/skbd@2.log"
+    error_log_path var / "log/skbd@2.log"
     environment_variables PATH: std_service_path_env
   end
 
