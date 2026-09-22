@@ -9,7 +9,7 @@ class Swm < Formula
   head 'https://github.com/starkwm/swm.git', branch: 'main'
 
   bottle do
-    root_url 'https://github.com/starkwm/swm/releases/download/v0.0.23'
+    root_url 'https://github.com/starkwm/swm/releases/download/v0.0.24'
     sha256 cellar: :any_skip_relocation,
            arm64_golden_gate: '105acf982b90646ee1c41ab527c0a61062efaa580b99e01264a58326754f070c'
   end
