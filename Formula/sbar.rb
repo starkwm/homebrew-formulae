@@ -2,10 +2,10 @@ class Sbar < Formula
   desc 'Stark Bar for macOS'
   homepage 'https://github.com/starkwm/sbar'
 
-  version '0.0.1'
+  version '0.0.2'
 
   url "https://github.com/starkwm/sbar/archive/refs/tags/v#{version}.tar.gz"
-  sha256 'c877dd79b2c2fc8923953c056abc5e99e61e208390145f35375af0f9f370b7f0'
+  sha256 'aac00d950bf2bccc57a98e39e36e08cecd269666e70030955243bd1ac576039a'
   license 'BSD-3-Clause'
   head 'https://github.com/starkwm/sbar.git', branch: 'main'
 
