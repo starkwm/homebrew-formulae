@@ -2,10 +2,10 @@ class Swm < Formula
   desc 'Stark Window Manager'
   homepage 'https://github.com/starkwm/swm'
 
-  version '0.0.27'
+  version '0.0.28'
 
   url "https://github.com/starkwm/swm/archive/refs/tags/v#{version}.tar.gz"
-  sha256 '51bc40c0a37e228a409b6578a6d539aab5adcd5a1bd4921dd39b14871736ff5f'
+  sha256 'f1c03e9126b20c3e3638b116eda2869e04969c142f6527c519008220bec5f03c'
   license 'BSD-3-Clause'
   head 'https://github.com/starkwm/swm.git', branch: 'main'
 
