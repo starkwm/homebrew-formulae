@@ -10,9 +10,9 @@ class Swm < Formula
   head 'https://github.com/starkwm/swm.git', branch: 'main'
 
   bottle do
-    root_url 'https://github.com/starkwm/swm/releases/download/v0.0.27'
+    root_url 'https://github.com/starkwm/swm/releases/download/v0.0.28'
     sha256 cellar: :any_skip_relocation,
-           arm64_golden_gate: '9ea7771cf33ffba0978b10091d00dea363e9274bf898d115fc3f6d6eac101514'
+           arm64_golden_gate: '27a30ef2bd07e9b180795c6b1ee29489e7eed7befd41eb26dd008d911ace3182'
   end
 
   depends_on xcode: :build
