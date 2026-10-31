@@ -9,6 +9,12 @@ class Stags < Formula
   license 'BSD-3-Clause'
   head 'https://github.com/starkwm/stags.git', branch: 'main'
 
+  bottle do
+    root_url 'https://github.com/starkwm/stags/releases/download/v0.0.1'
+    sha256 cellar: :any_skip_relocation,
+           arm64_golden_gate: 'c480dd41edab11df8e2de31b1f8ec4b1fda2c870484eb2ae3ef7e78f7bb497f7'
+  end
+
   depends_on xcode: :build
   depends_on arch: :arm64
   depends_on macos: :tahoe
