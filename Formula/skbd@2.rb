@@ -33,6 +33,6 @@ class SkbdAT2 < Formula
   end
 
   test do
-    assert_match "skbd #{version}", shell_output("#{bin}/skbd --version")
+    assert_match "skbd v#{version}", shell_output("#{bin}/skbd --version")
   end
 end
