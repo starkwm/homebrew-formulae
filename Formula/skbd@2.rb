@@ -6,6 +6,7 @@ class SkbdAT2 < Formula
 
   url "https://github.com/starkwm/skbd/archive/refs/tags/v#{version}.tar.gz"
   sha256 '7ed9985fc861bf3073f3a8169998282ff5613155b696713a82179e3d3360ad8b'
+  license 'BSD-3-Clause'
   head 'https://github.com/starkwm/skbd.git', branch: 'main'
 
   bottle do
