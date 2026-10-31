@@ -10,8 +10,9 @@ class SkbdAT2 < Formula
   head 'https://github.com/starkwm/skbd.git', branch: 'main'
 
   bottle do
-    root_url 'https://github.com/starkwm/skbd/releases/download/v0.0.7'
-    sha256 cellar: :any_skip_relocation, arm64_tahoe: 'd38b300f9f24939537906bc5293910bac3f5e2448d6ca955f5fe4aa3a5cf924d'
+    root_url 'https://github.com/starkwm/skbd/releases/download/v0.0.8'
+    sha256 cellar: :any_skip_relocation,
+           arm64_golden_gate: '3256b96e0764779e142fabba79d076e037a4b495f90e05681954eeeb9a2997c5'
   end
 
   depends_on xcode: :build
