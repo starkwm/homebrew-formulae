@@ -2,10 +2,10 @@ class SkbdAT2 < Formula
   desc 'Stark Keybind Daemon for macOS, bind shortcuts to shell commands'
   homepage 'https://github.com/starkwm/skbd'
 
-  version '0.0.7'
+  version '0.0.8'
 
   url "https://github.com/starkwm/skbd/archive/refs/tags/v#{version}.tar.gz"
-  sha256 '7ed9985fc861bf3073f3a8169998282ff5613155b696713a82179e3d3360ad8b'
+  sha256 'd3f6610b44127e645acdeb67151490ba8f0da3ccf6208f7b78505966b4098c40'
   license 'BSD-3-Clause'
   head 'https://github.com/starkwm/skbd.git', branch: 'main'
 
