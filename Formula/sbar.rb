@@ -9,6 +9,11 @@ class Sbar < Formula
   license 'BSD-3-Clause'
   head 'https://github.com/starkwm/sbar.git', branch: 'main'
 
+  bottle do
+    root_url 'https://github.com/starkwm/sbar/releases/download/v0.0.2'
+    sha256 arm64_golden_gate: '5a5a2e01464f02f8c4e2f96f8d1745330668f79ce3b036982d1343c715d67421'
+  end
+
   depends_on xcode: :build
   depends_on arch: :arm64
   depends_on macos: :tahoe
