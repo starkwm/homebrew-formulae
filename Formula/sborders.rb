@@ -9,6 +9,12 @@ class Sborders < Formula
   license 'BSD-3-Clause'
   head 'https://github.com/starkwm/sborders.git', branch: 'main'
 
+  bottle do
+    root_url 'https://github.com/starkwm/sborders/releases/download/v0.0.1'
+    sha256 cellar: :any_skip_relocation,
+           arm64_golden_gate: '44c3c84a379922095e552966c5b2a9fe96cbc38ffcf4828c984fae25853a4cbf'
+  end
+
   depends_on xcode: :build
   depends_on arch: :arm64
   depends_on macos: :tahoe
