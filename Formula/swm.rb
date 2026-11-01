@@ -2,18 +2,12 @@ class Swm < Formula
   desc 'Stark Window Manager'
   homepage 'https://github.com/starkwm/swm'
 
-  version '0.0.28'
+  version '0.0.29'
 
   url "https://github.com/starkwm/swm/archive/refs/tags/v#{version}.tar.gz"
-  sha256 'f1c03e9126b20c3e3638b116eda2869e04969c142f6527c519008220bec5f03c'
+  sha256 'c26f73088a419cfad00773783c162f908041c1d5f5bd1f2279a9d81685c93c2d'
   license 'BSD-3-Clause'
   head 'https://github.com/starkwm/swm.git', branch: 'main'
-
-  bottle do
-    root_url 'https://github.com/starkwm/swm/releases/download/v0.0.28'
-    sha256 cellar: :any_skip_relocation,
-           arm64_golden_gate: '27a30ef2bd07e9b180795c6b1ee29489e7eed7befd41eb26dd008d911ace3182'
-  end
 
   depends_on xcode: :build
   depends_on arch: :arm64
@@ -34,6 +28,6 @@ class Swm < Formula
   end
 
   test do
-    assert_match "swm #{version}", shell_output("#{bin}/swm --version")
+    assert_match "swm version v#{version}", shell_output("#{bin}/swm --version")
   end
 end
