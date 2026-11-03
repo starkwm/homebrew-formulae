@@ -9,6 +9,13 @@ class Swm < Formula
   license 'BSD-3-Clause'
   head 'https://github.com/starkwm/swm.git', branch: 'main'
 
+  bottle do
+    root_url 'https://github.com/starkwm/swm/releases/download/v0.0.30'
+    rebuild 1
+    sha256 cellar: :any_skip_relocation,
+           arm64_golden_gate: 'b7b177f3b8d8050c7f3a261acb3921d17e3e209443af933f94e3867a5fb2bba9'
+  end
+
   depends_on xcode: :build
   depends_on arch: :arm64
   depends_on macos: :tahoe
