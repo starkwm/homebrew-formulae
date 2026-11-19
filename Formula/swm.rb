@@ -2,17 +2,16 @@ class Swm < Formula
   desc 'Stark Window Manager'
   homepage 'https://github.com/starkwm/swm'
 
-  version '0.0.32'
+  version '0.0.33'
 
   url "https://github.com/starkwm/swm/archive/refs/tags/v#{version}.tar.gz"
-  sha256 '9162aa459275309543d98c444a61d79af6a026748c8227b7d0a879ffa0724d62'
+  sha256 'f9f80f9762cd143e5c6a88fa2de5da0a32799ce5357976ae6ac3173a2f5be421'
   license 'BSD-3-Clause'
   head 'https://github.com/starkwm/swm.git', branch: 'main'
 
   bottle do
-    root_url 'https://github.com/starkwm/swm/releases/download/v0.0.32'
-    sha256 cellar: :any_skip_relocation,
-           arm64_golden_gate: '86dcd7131d3518926156a9901cd687e6080822059c318be3593f9f6af27f765a'
+    root_url "https://github.com/starkwm/swm/releases/download/v0.0.33"
+    sha256 cellar: :any_skip_relocation, arm64_golden_gate: "67cefd0e03b547bfd2da843fa964468dee91688ea9592d9a202ed6addf19cc3a"
   end
 
   depends_on xcode: :build
