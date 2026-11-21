@@ -2,16 +2,16 @@ class Sbar < Formula
   desc 'Stark Bar for macOS'
   homepage 'https://github.com/starkwm/sbar'
 
-  version '0.0.3'
+  version '0.0.4'
 
   url "https://github.com/starkwm/sbar/archive/refs/tags/v#{version}.tar.gz"
-  sha256 'd0e9fc9fb7240bb5c0cb553baf0daabe0cd60bb385370739935e061a15e9ed14'
+  sha256 '1718a5393ec194d027bd515551951c1bf826b1406c418c7ece098623a727ca6a'
   license 'BSD-3-Clause'
   head 'https://github.com/starkwm/sbar.git', branch: 'main'
 
   bottle do
-    root_url 'https://github.com/starkwm/sbar/releases/download/v0.0.3'
-    sha256 arm64_golden_gate: '750ad2a297749f8f9d2b2e98e2751751701b2521ab62a9ec1a2307c26dae1b13'
+    root_url "https://github.com/starkwm/sbar/releases/download/v0.0.4"
+    sha256 arm64_golden_gate: "f51fe6fff80d3f3a95d83692e3ca7b3116276cca50b69ce84fdf9f1e07e6f637"
   end
 
   depends_on xcode: :build
