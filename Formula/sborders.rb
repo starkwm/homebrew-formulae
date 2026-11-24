@@ -2,17 +2,16 @@ class Sborders < Formula
   desc 'Stark Borders for macOS'
   homepage 'https://github.com/starkwm/sborders'
 
-  version '0.0.1'
+  version '0.0.2'
 
   url "https://github.com/starkwm/sborders/archive/refs/tags/v#{version}.tar.gz"
-  sha256 '918b2600b0075d4b8dfd9b97654a49bdc1c2b174c62eac2db3d0978c82d94017'
+  sha256 'f60ccf7a90f2f4daf9e64d2b2864c1534d54a9e5ac7ad6baf7f0c863c7f6383e'
   license 'BSD-3-Clause'
   head 'https://github.com/starkwm/sborders.git', branch: 'main'
 
   bottle do
-    root_url 'https://github.com/starkwm/sborders/releases/download/v0.0.1'
-    sha256 cellar: :any_skip_relocation,
-           arm64_golden_gate: '44c3c84a379922095e552966c5b2a9fe96cbc38ffcf4828c984fae25853a4cbf'
+    root_url "https://github.com/starkwm/sborders/releases/download/v0.0.2"
+    sha256 cellar: :any_skip_relocation, arm64_golden_gate: "7feae9d3d718c1684519bdee4c236e977c6fd49bb634e193afd548817d3722c9"
   end
 
   depends_on xcode: :build
