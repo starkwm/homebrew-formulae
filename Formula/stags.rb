@@ -2,17 +2,16 @@ class Stags < Formula
   desc 'Stark window tags for macOS'
   homepage 'https://github.com/starkwm/stags'
 
-  version '0.0.1'
+  version '0.0.2'
 
   url "https://github.com/starkwm/stags/archive/refs/tags/v#{version}.tar.gz"
-  sha256 'f6d538841e25664f15cc809f4ee6093cc99c29bfc6cd9f3e15d06b8e83f72225'
+  sha256 'cc6b685af8c8f21ea4de6387a2228b1e209005373b94f265bd97fd4f139d2d38'
   license 'BSD-3-Clause'
   head 'https://github.com/starkwm/stags.git', branch: 'main'
 
   bottle do
-    root_url 'https://github.com/starkwm/stags/releases/download/v0.0.1'
-    sha256 cellar: :any_skip_relocation,
-           arm64_golden_gate: 'c480dd41edab11df8e2de31b1f8ec4b1fda2c870484eb2ae3ef7e78f7bb497f7'
+    root_url "https://github.com/starkwm/stags/releases/download/v0.0.2"
+    sha256 cellar: :any_skip_relocation, arm64_golden_gate: "d952f33e3da9f58c4f15a4fd69b286cc524410b25a54c1dc024ee5a52648a23d"
   end
 
   depends_on xcode: :build
